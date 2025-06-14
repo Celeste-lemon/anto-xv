@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+
+    <title>Mis 15 Años - Anto</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css?v1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+            <a href="index.html">
+                <img class="nav__logo" src="assets/img/logo-general.png" alt="logo" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="700">
+            </a>
+
+            <div class="nav__icons">
+                <a href="#nav">
+                    <svg class="nav__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40"
+                        height="40">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="nav__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40"
+                        height="40">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav__items">
+                <li class="nav__links">
+                    <a class="nav__link" href="#temporizador">¿Cuánto falta?</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#donde">Ubicación</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#fotos">Fotos</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#playlist">Playlist</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#album">Álbum</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#correo">Confirmación</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <section class="music">
+
+            <h3 class="music__title">Dale Play!
+            </h3>
+
+            <div class="music__container">
+                <img class="music__tocadisco" src="assets/img/borde.png" alt="">
+                <audio src="music/sample3.mp3"></audio>
+                <img class="music__img" src="assets/img/portada.png" alt="">
+                <div class="controles">
+                    <div class="controles__button">
+                        <img class="controles__img" id="rewind" src="assets/vectores/rewind.svg" alt="">
+                    </div>
+                    <div class="controles__button" id="playPauseContainer">
+                        <img class="controles__img" id="play" src="assets/vectores/play.svg" alt="">
+                        <img class="controles__img" id="pause" src="assets/vectores/pause.svg" alt="">
+                    </div>
+                    <div class="controles__button">
+                        <img class="controles__img" id="forward" src="assets/vectores/fordward.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="name">
+            <img src="assets/img/logo-anto.png" alt="" class="name__img" data-aos="flip-right">
+        </section>
+
+        <section class="temporizador contenedor block glow" id="temporizador" data-aos="fade-up">
+            <h3 class="title title--tempo">Falta muy poquito</h3>
+            <div class="timer">
+                <div class="timer-item">
+                    <p class="timer-value" id="days">0</p>
+                    <p class="timer-label">Días</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="hours">0</p>
+                    <p class="timer-label">Horas</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="minutes">0</p>
+                    <p class="timer-label">Minutos</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="seconds">0</p>
+                    <p class="timer-label">Segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="frase contenedor" data-aos="fade-up">
+            <div class="block glow">
+                <p class="frase__paragraph frase__paragraph--active">
+                    Cuando la niña despertó, el hada de las quince ilusiones le dijo:
+                    Ya es la hora, el mundo te empuja a vivir, el mañana depende de ti.
+                    No temas, vencerás la tristeza si encuentras en cada una de ellas un
+                    peldaño para crecer.
+                    Hoy te concedo quince ilusiones
+                </p>
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="donde" id="donde">
+
+            <div class="donde__container block glow">
+
+                <article class="parteuno contenedor" data-aos="fade-right">
+                    <h3 class="title title--active">Misa</h3>
+                    <p class="parrafo parrafo--donde">
+                        Te espero el día 29 de Diciembre del 2024 a las 20:00hs en La Catedral
+                    </p>
+                    <img src="assets/img/misa.jpg" alt="" class="donde__img">
+                    <a class="boton__cta" href="#donde">ver ubicación</a>
+                </article>
+
+                <article class="partedos contenedor block glow" data-aos="fade-left">
+                    <h3 class="title title--active">Fiesta</h3>
+                    <p class="parrafo parrafo--donde">
+                        Te espero el día 29 de Diciembre del 2024 a las 22:00hs en Salón París Catamarca
+                    </p>
+                    <img src="assets/img/fiesta.jpg" alt="" class="donde__img">
+                    <a class="boton__cta" href="#donde">ver ubicación</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="swiper mySwiper" id="fotos" data-aos="fade-up">
+            <h3 class="title title--fotos" data-aos="fade-up">Mis Fotos</h3>
+            <h5 class="parrafo parrafo--fotos" data-aos="fade-right">Desliza <br> (ó toca para ampliar)</h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto1.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto2.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto3.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto4.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto5.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto6.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto7.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto8.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto9.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto9.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/img/galeria/foto10.jpg" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/img/galeria/foto10.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="itinerarios">
+            <h3 class="itinerario__aviso">Domingo 29 de Diciembre 2024</h3>
+            <div class="itinerario">
+
+                <div class="line">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <article class="itinerario__item item1">
+                        <img class="itinerario__icon icon1" src="assets/imagenes/iconos/iconoIGLESIA.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Misa</h6>
+                            <h6 class="itinerario__name itinerario__name2">20:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item2">
+                        <img class="itinerario__icon icon2" src="assets/imagenes/iconos/iconoINVITADOS.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Ingreso Invitados</h6>
+                            <h6 class="itinerario__name itinerario__name2">21:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item3">
+                        <img class="itinerario__icon icon3" src="assets/imagenes/iconos/iconoQUINCEAÑERA.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Mi Ingreso</h6>
+                            <h6 class="itinerario__name itinerario__name2">22:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item4">
+                        <img class="itinerario__icon icon4" src="assets/imagenes/iconos/iconoCENA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cena</h6>
+                            <h6 class="itinerario__name itinerario__name2">22:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item5">
+                        <img class="itinerario__icon icon5" src="assets/imagenes/iconos/iconoINICIOfiesta.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Inicio de la Fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">00:00hs</h6>
+                        </div>
+                    </article>
+                    <article class="itinerario__item item6">
+                        <img class="itinerario__icon icon6" src="assets/imagenes/iconos/iconoFIN.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cierre de la Fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">06:00hs</h6>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="dresscode contenedor block glow" id="dresscode">
+
+            <h4 class="title title--active">Dresscode</h4>
+            <h4 class="subtitle subtitle--active">Elegante / Cocktail</h4>
+            <p class="dresscode__note">Por favor no asistir con vestimenta en tonos Rosa Viejo</p>
+            <img class="dresscode__img" src="assets/img/dresscode-icon.png" alt="">
+
+            <button class="boton__cta" id="showImage" data-aos="fade-up">Ver Ejemplo</button>
+
+            <div id="lightbox" class="lightbox">
+                <span id="closeButton" class="close-button">cerrar</span>
+                <img src="assets/img/dresscode-ejemplo.png" alt="Imagen" />
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="regalos contenedor block glow" data-aos="fade-up">
+
+            <h4 class="regalos__title">Regalos</h4>
+
+            <img class="regalos__icon" src="assets/iconos/icono-regalo.png" alt="">
+
+            <p class="parrafo parrafo--regalos">
+                "Quiero que sepas que tu presencia es lo más importante en mi fiesta y si lo deseas, puedes hacerme un
+                presente, que podrás dejarlo en mi mesa de regalos,
+                o colocar tu sobrecito en la urna en la entrada del salón, también podés hacerlo por transferencia a mi
+                cuenta...
+                y recuerda: <br> ¡Tu cariño es el mejor regalo que puedo recibir!"
+            </p>
+
+            <button id="mostrarBoton" class="boton__cta">Ver datos bancarios</button>
+            <div id="textoDesplegable" class="escondido regalos__data">
+                <div class="lineRegalos"></div>
+
+                <h6 class="regalo__date">Alias:</h6>
+                <p class="name__alias" id="alias">los15deanto.2025</p>
+                <button class="alias__button" onclick="copyText()">
+                    <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                    Copiar Alias</button>
+                <div class="copy-message" id="copyMessage">¡Copiado!</div>
+
+                <div class="lineRegalos"></div>
+
+                <h6 class="regalo__date">CBU:</h6>
+                <p class="name__cbu" id="cbuAlias">012342790173966</p>
+                <button class="cbu__button" onclick="copyCbuText()">
+                    <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                    Copiar CBU</button>
+                <div class="copy-message" id="copyCbuMessage" style="display: none;">¡Copiado!</div>
+                <div class="lineRegalos"></div>
+
+            </div>
+
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="agradecimiento block glow contenedor" data-aos="fade-up">
+
+            <div class="agradecimiento__contenedor">
+                <p class="parrafo parrafo--agradecimiento">
+                    "Deseo expresar mi profundo agradecimiento a todos mis familiares y quiero destacar el valioso
+                    sacrificio realizado especialmente por mis padres, cuyo apoyo fué fundamental para hacer realidad
+                    este momento tan significativo en mi vida"
+                </p>
+
+                <!-- ---- padres ----- -->
+                <div class="agradecimiento__container">
+                    <h4 class="agradecimiento__title">Mis Padres</h4>
+                    <div class="agradecimiento__fotos" data-aos="fade-right">
+
+                        <div class="agradecimiento__picture">
+                            <img class="agradecimiento__img" src="assets/img/padres-padrinos/foto-padre.jpg" alt="">
+                            <h5 class="agradecimiento__name">Eugenio</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                            <img class="agradecimiento__img" src="assets/img/padres-padrinos/foto-madre.jpg" alt="">
+                            <h5 class="agradecimiento__name">Noelia</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---- padrinos ----- -->
+
+                <div class="agradecimiento__container">
+                    <h4 class="agradecimiento__title agradecimiento__title--active">Mis Padrinos</h4>
+                    <div class="agradecimiento__fotos" data-aos="fade-left">
+
+                        <div class="agradecimiento__picture">
+                            <img class="agradecimiento__img" src="assets/img/padres-padrinos/foto-padrino.jpg" alt="">
+                            <h5 class="agradecimiento__name">Arnoldo</h5>
+                        </div>
+
+                        <div class="agradecimiento__picture">
+                            <img class="agradecimiento__img" src="assets/img/padres-padrinos/foto-madrina.jpg" alt="">
+                            <h5 class="agradecimiento__name">Camila</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="playlist contenedor block glow" id="playlist" data-aos="fade-up">
+            <div class="playlist__container">
+                <h4 class="title title--playlist">No existe fiesta sin buena música</h4>
+                <img class="playlist__img" src="assets/iconos/icono-musica.png" alt="">
+                <h4 class="subtitle subtitle--playlist">¿Qué música crees que no debería faltar? <br> Ayúdanos a
+                    elegir...
+                </h4>
+            </div>
+
+            <div class="playlist__mensaje" id="formContainer">
+                <label class="playlist__label" for="userName">Nombre y Apellido:</label>
+                <input class="playlist__input" type="text" id="userName" placeholder="Tu nombre y apellido">
+
+                <label class="playlist__label playlist__label2" for="whatsappMessage">Recomendación:</label>
+                <input class="playlist__input" type="text" id="whatsappMessage"
+                    placeholder="Escribe tu tema recomendado aquí">
+
+                <button class="boton__cta boton__cta2" id="botonplay1">Enviar Recomendación</button>
+            </div>
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="album contenedor block glow" data-aos="flip-left">
+
+            <div class="album__container" id="albumDigital">
+                <h3 class="title title--album">Mi álbum de fotos</h3>
+                <img class="album__img" src="assets/iconos/icono-polaroid.png" id="album" alt="">
+                <h3 class="parrafo parrafo--album">
+                    Quiero inmortalizar este maravilloso momento, guardando fotos y para ello tengo mi propio album
+                    digital <br> <br>
+                    <a class="boton__cta boton__cta4" href="#albumDigital">Compartir fotos</a>
+                    Ó podés compartir tus fotos y videos de la fiesta en instagram y etiquétame
+                </h3>
+
+                <a class=" boton__cta album__insta" href="https://instagram.com/15anto2025">
+                    <img class="album__icon" src="assets/iconos/icono-insta.png" alt="">@15anto2025</a>
+
+            </div>
+
+        </section>
+
+        <!-- separador: -->
+        <img class="img__separador" src="assets/img/separador.png" alt="" data-aos="flip-right">
+        <!-- separador: -->
+
+        <section class="confirmacion contenedor block glow" id="correo" data-aos="fade-up">
+            <div class="confirmacion__container">
+                <h4 class="parrafo parrafo--confirmacion" data-aos="fade-right">
+                    Recordá que tenes hasta el día 25 de Diciembre del 2024 para confirmar tu
+                    presencia <br>
+                </h4>
+                <div id="asistencia">
+                    <div class="asistencia__radios">
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="SI ASISTIRÉ"> SI
+                            ASISTIRÉ
+                        </label>
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="NO ASISTIRÉ"> NO
+                            ASISTIRÉ
+                        </label>
+                    </div>
+                    <br>
+                    <div class="asistencia__datos">
+                        <label class="asistencia__label" for="userFullName">Nombre y Apellido:</label>
+                        <input class="input__text" type="text" id="userFullName" placeholder="Tu nombre y apellido"
+                            required>
+                        <br>
+                        <label class="asistencia__label asistencia__label2" for="customMessage">Mensaje:</label>
+                        <textarea class="input__text input__text2" id="customMessage"
+                            placeholder="Mensaje opcional por ejemplo alguna restriccion alimenticia"></textarea>
+                        <br>
+                        <button class="boton__cta boton__cta3" id="botoncito1">
+                            <img class="whatsapp__icon" src="assets/iconos/icono-whats.png" alt="">Enviar
+                            mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="footer">
+        <div class="ondas">
+            <div class="onda" id="onda1"></div>
+            <div class="onda" id="onda2"></div>
+            <div class="onda" id="onda3"></div>
+            <div class="onda" id="onda4"></div>
+        </div>
+        <h3 class="footer__frase">Los momentos felices de la vida se vuelven más maravillosos aún, cuando tenemos la
+            suerte de compartirlos con los familiares y amigos más queridos... Te espero!</h3>
+    </section>
+
+    <section class="info" id="info">
+        <h6 class="info__text">
+            Página creada para los 15 de Anto - 2024 &copy; todos los derechos reservados
+        </h6>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js?v1"></script>
+</body>
+
+</html>
