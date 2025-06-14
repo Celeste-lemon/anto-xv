@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeDresscode();
     initializeGifts();
     initializeItinerary();
+    initializePlaylistForm();
+    initializeConfirmationForm();
     initializeNavigation();
 });
 
@@ -319,6 +321,34 @@ function showCopyMessage(messageElement) {
                 messageElement.style.display = 'none';
             }, 300);
         }, 2000);
+    }
+}
+
+// ==================== FORMULARIO PLAYLIST ====================
+function initializePlaylistForm() {
+    const btn = document.getElementById('botonplay1');
+    if (btn) {
+        btn.addEventListener('click', function() {
+            const name = encodeURIComponent(document.getElementById('userName').value.trim());
+            const track = encodeURIComponent(document.getElementById('whatsappMessage').value.trim());
+            const url = `https://wa.me/549123456789?text=Hola,%20soy%20${name}.%20Mi%20recomendaci%C3%B3n%20es:%20${track}`;
+            window.open(url, '_blank');
+        });
+    }
+}
+
+// ==================== FORMULARIO CONFIRMACIÓN ====================
+function initializeConfirmationForm() {
+    const btn = document.getElementById('botoncito1');
+    if (btn) {
+        btn.addEventListener('click', function() {
+            const optionEl = document.querySelector('input[name="attendanceOption"]:checked');
+            const name = encodeURIComponent(document.getElementById('userFullName').value.trim());
+            const msg = encodeURIComponent(document.getElementById('customMessage').value.trim());
+            const option = optionEl ? optionEl.value : '';
+            const url = `https://wa.me/549123456789?text=Hola,%20soy%20${name}.%20${option}.%20${msg}`;
+            window.open(url, '_blank');
+        });
     }
 }
 
