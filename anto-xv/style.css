@@ -29,10 +29,16 @@ html {
 
 body {
     font-family: var(--font-playfair);
-    background: url('assets/img/fondo.png') center/cover no-repeat fixed;
+    background: url('Assets/imagenes/Fondo.png') center/cover no-repeat fixed;
     color: var(--rosa-profundo);
     line-height: 1.6;
     overflow-x: hidden;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
 }
 
 /* ==================== UTILIDADES ==================== */
@@ -274,9 +280,8 @@ body {
 }
 
 .controles__img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1);
+    font-size: 20px;
+    color: #fff;
 }
 
 #pause {
@@ -692,9 +697,8 @@ body {
 }
 
 .copiar__icon {
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) invert(1);
+    font-size: 16px;
+    color: #fff;
 }
 
 .copy-message {
