@@ -1,4 +1,18 @@
 /* ==================== VARIABLES CSS ==================== */
+@font-face {
+    font-family: "Cookie";
+    src: url("anto-xv/Assets/fonts/Cookie-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("anto-xv/Assets/fonts/Playfair-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --rosa-profundo: #8C4659;
     --rosa-suave: #F294B6;
@@ -27,9 +41,6 @@ html {
     font-size: 16px;
 }
 
-body {
-    font-family: var(--font-playfair);
-    background: url('Assets/imagenes/Fondo.png') center/cover no-repeat fixed;
     color: var(--rosa-profundo);
     line-height: 1.6;
     overflow-x: hidden;
