@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: var(--font-playfair);
-    background: url('assets/img/fondo.png') center/cover no-repeat fixed;
+    background: url('Assets/imagenes/Fondo.png') center/cover no-repeat fixed;
     color: var(--rosa-profundo);
     line-height: 1.6;
     overflow-x: hidden;
